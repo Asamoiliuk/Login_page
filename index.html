@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+	<title>Login Form Example</title>
+</head>
+<body>
+	<script>
+		function myFunction() {
+  				var x = document.getElementById("password");
+  				if (x.type === "password") {
+   				x.type = "text";
+  				} else {
+    			x.type = "password";
+  				}
+			}
+	</script>
+	<div class="main">
+		<div class="col-img">	
+		</div>
+		<div class="col">
+				<div class="center">
+			<div class="langselect">
+				<select name="language" id="language">
+	    			<option value="EN">English (USA)</option>
+	  				<option value="UA">Ukrainian</option>
+	  				<option value="RU">Russian</option>
+				</select>
+				<div class="custom-arrow"><img src="images/Polygon 1.svg"></div>
+				</div>
+		
+
+				<h1>Create account</h1>
+
+				<a href="http://www.facebook.com"><div class="social">f </div></a>
+				<a href="http://www.google.com"><div class="social">G</div></a>
+				<a href="http://www.linkedin.com"><div class="social">in </div></a>
+
+				<p class="email">or use your email for registration</p>
+
+				<form action="result.html" method="GET">
+
+  					<input type="text" class="input" name="name" placeholder="Name" required><br>
+
+  					<div class ="picture">
+  						<input type="email" class="input" name="email" placeholder="email" required>
+  						<div class="dog">@</div>
+  					</div>
+  		
+  					<div class="picture">
+  						<input type="password" id="password" class="input" placeholder="password" required>
+  						<div class="dog"><img src="images/Group 1.svg" onclick="myFunction()"></div>
+					</div>
+
+  					<div class="remember">
+
+	  					<div class="left">
+	  						<input type="checkbox" id="forgot" name="forgot" class="forgot"><label for="forgot"> Remember me
+	  						</label>
+	  					</div>
+
+  						<div class="right">
+  							<a class="login" href="">Forgot&#160password?</a><br><br>
+  							Already&#160a&#160member?  <a class="login" href="">Log&#160in</a>
+  						</div>
+
+  					</div>
+
+  					<button type="submit" class="button">Sign up</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
